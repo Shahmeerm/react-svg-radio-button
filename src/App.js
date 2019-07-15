@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactRadio from './components/ReactRadio'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  handleChange = (data) => {
+    console.log ('ReactRadio Turned -> ' + data);
+  }
+
+  render () {
+    return (
+      <ReactRadio trueColor={'#4CAF50'} falseColor={'#F44336'} onPropertyChange={this.handleChange}/>
+    );
+  }
+
 }
 
 export default App;
