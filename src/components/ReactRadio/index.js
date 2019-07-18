@@ -1,4 +1,4 @@
 //import ReactRadio from './ReactRadio'
-import AnimatedRadio from './AnimatedRadio'
+import ReactAnimatedRadio from './ReactAnimatedRadio'
 //360 225 100 150
-export default AnimatedRadio;
+export default ReactAnimatedRadio;
